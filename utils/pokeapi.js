@@ -1,8 +1,8 @@
 import axios from "axios";
 
-export const getPokemonList = (respFunc) =>{
+export const getPokemonList = (respFunc, link) =>{
     axios
-        .get("https://pokeapi.co/api/v2/pokemon?offset=20&limit=20")
+        .get(link)
         .then((response) => {
             respFunc(response.data)
         })

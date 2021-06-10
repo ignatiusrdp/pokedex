@@ -3,6 +3,7 @@ import stateReducer from './reducer'
 
 const initialState = {
     pokemons : [],
+    endpoint: "https://pokeapi.co/api/v2/pokemon?offset=0&limit=20",
     next : "",
     prev : "",
     loading : true,
